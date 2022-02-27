@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">   
+        
+        <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" type="text/css" rel="stylesheet"/>
+        <link href="site.css" type="text/css" rel="stylesheet"/>
+        
+        <style>
+            form {
+                padding: 15px;
+            }
+
+            form > label {
+                color: #000;
+                font-weight: 600;
+                display: block;
+            }
+
+            form > input {
+                margin-bottom: 10px;
+            }
+
+            form > div > button {
+                margin-right: 15px;
+                font-weight: 600;
+                padding: 3px 10px 3px 10px;
+            }
+
+            form > div > button > i {
+                font-weight: lighter;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="Index.html">
+                <img src="logo.png" class="logo"/> 
+            </a> 
+
+            <a href="Index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="Sobre.html">
+                <i class="fa-solid fa-address-book"></i>
+                Sobre
+            </a>
+
+            <a href="Servicos.html">
+                <i class="fa-solid fa-gear"></i>
+                Serviços
+            </a>
+
+            <label>
+                <i class="fa-solid fa-envelope"></i>
+                Contato
+            </label>            
+        </header>
+
+        <div class="site">
+            <h1>
+                <i class="fa-solid fa-envelope"></i>
+                Contato
+            </h1>
+
+            <label>
+                Para entrar em contato, use o formulário abaixo:
+            </label>
+
+            <form>
+                
+                <label>Nome</label>
+                <input type="text" name="Nome" />
+
+                <label>E-mail</label>
+                <input type="email" name="E-mail" />
+
+                <label>Telefone</label>
+                <input type="tel" name="Telefone" />
+
+                <label>Assunto</label>
+                <input type="text" name="Assunto" />
+
+                <div>
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>     
+                        Enviar 
+                    </button>
+    
+                    <button type="reset">
+                        <i class="fa-solid fa-eraser"></i>
+                        Limpar
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+        <footer>
+            Todos os direitos reservados - 
+            <a href="https://www.tyle.com.br">Tyle Solutions</a>
+        </footer>
+    </body>
+</html>
+

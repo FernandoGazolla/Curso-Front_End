@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        
+        <script src="node_modules/jquery/dist/jquery.js">
+
+        </script> 
+        
+        
+        <script>
+            $(document).ready(function(){
+                $("#Enviar").click(function(){
+                    if ($("#exampleInputEmail1").val() == "")
+                    {
+                        alert("Informe sua conta de email");
+                    }
+                    else
+                    {
+                        if ($("#exampleInputPassword1").val() == "")
+                        {
+                            alert("Informe sua senha");
+                        }
+                        else 
+                        {
+                            if ($("#exampleInputEmail1").val() == "a@b.com.br" &&
+                               $("#exampleInputPassword1").val() == "123")
+                            {
+                                alert("Login efetuado com sucesso");
+                            }
+                            else
+                            {
+                                alert("Falha ao efetuar o logon");
+                            }
+
+                        }
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button class="btn btn-primary" id="Enviar">Submit</button>
+              </form>
+        </div>
+    </body>
+</html>

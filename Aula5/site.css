@@ -1,0 +1,93 @@
+* {
+    font-family: 'Syne Tactile', cursive;
+}
+
+body {
+    width: 1024px;
+    background-color: #cecece;
+}
+
+.site {
+    height: 85%;
+    padding: 10px;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+
+header {
+    text-align: right;
+    padding-top: 40px;
+}
+
+header>label {
+    padding-left: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+header>a {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+header>a:hover {
+    font-weight: 600;
+    color: blue;
+}
+
+header>a:visited {
+    color: black;
+}
+
+footer>a {
+    color: red;
+    text-decoration: none;
+}
+
+form input {
+    display: block;
+    padding: 2px;
+}
+
+form {
+    padding: 20px;
+}
+
+.mainmenubtn {
+    background-color: rgb(74, 83, 87);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.mainmenubtn:hover {
+    background-color: rgb(95, 95, 99);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: rgb(71, 75, 77);
+    min-width: 200px;
+}
+
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}

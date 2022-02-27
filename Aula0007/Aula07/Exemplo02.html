@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        
+        <script src="node_modules/jquery/dist/jquery.js">
+
+        </script> 
+        
+        
+        <script>
+            $(document).ready(function(){
+                $("#calcular").click(function(){
+                    if ($("#numero1").val() == "" ||
+                        $("#numero2").val() == "") {
+                        alert("Os numeros 1 e 2 devem ser informados");
+                    }
+                    else
+                    {
+                        $("#resultado").val(parseInt($("#numero1").val()) * parseInt($("#numero2").val()));
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                  <label for="numero1" class="form-label">Numero 1</label>
+                  <input type="number" class="form-control" id="numero1">
+                </div>
+                <div class="mb-3">
+                    <label for="numero2" class="form-label">Numero 2</label>
+                    <input type="number" class="form-control" id="numero2">
+                  </div>
+                  <div class="mb-3">
+                    <label for="resultado" class="form-label">Resultado</label>
+                    <input type="number" class="form-control" id="resultado">
+                  </div>
+                <button type="button" class="btn btn-primary" id="calcular">Submit</button>
+              </form>
+        </div>
+    </body>
+</html>

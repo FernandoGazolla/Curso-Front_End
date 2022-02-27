@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="login.css" type="text/css" rel="stylesheet" />
+    <link href="bower_components/components-font-awesome/css/all.css" type="text/css" rel="stylesheet" />
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' />
+
+
+    <script>
+        $(document).ready(function() {
+            $("#enviar").click(function() {
+                if ($("#exampleInputEmail1").val() == "") {
+                    alert("Informe seu E-mail");
+                } else {
+                    if ($("#exampleInputPassword1").val() == "") {
+                        alert("Informe sua Senha");
+
+                    } else {
+                        if ($("#exampleInputEmail1").val() == "fernandob" &&
+                            $("#exampleInputPassword1").val() == "1234") {
+                            alert("Longin Efetuado com Sucesso");
+                        } else {
+                            alert("Falha no Login");
+                        }
+
+
+                    }
+
+
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                <input type="email" class="form-control is-invalid" id="exampleInputEmail1" placeholder=" name@exeple.com" type="text" placeholder=" Digite seu E-mail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" type="password" placeholder="Digite sua Senha">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lembre-Me</label>
+            </div>
+
+            <button class="btn btn-primary btn-lg" id="enviar" class="bi bi-door-open-fill"><i class="fa fa-taxi align-top bigger-125"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>
+                  Login
+            
+            </button>
+
+
+
+
+
+        </form>
+
+
+
+
+    </div>
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" type="text/css" rel="stylesheet"/>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    
+        <title>UOL - Seu universo online</title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .blackBar {
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: 60px;
+                align-items: center;
+                background: #1a1a1a;
+                color: #fff;
+                font-size: .75rem;
+                letter-spacing: 0px;
+                line-height: 1.2;
+                z-index: 6000001;
+            }
+
+            li {
+                color: rgba(95, 160, 104, 0.945);
+                display: list-item;
+                text-align: -webkit-match-parent;
+            }
+            .menu {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                text-transform: uppercase;
+                z-index: 1;
+                align-items: center;
+            }
+
+            .blackBarContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center
+            }
+
+            .blackBar > div ul > li > a {
+                text-decoration: none;
+                color: #fff;
+                padding-right: 20px;
+                font-size: 12px;
+            }
+
+            .blackBar > div {
+                align-items: center;
+                vertical-align: middle;
+            }
+
+            #menuUtil {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="blackBar">
+            <div class="container col blackBarContainer" style="background: #000; color: #fff; height: 60px;">
+
+                <ul class="menu">
+                    <li><a href="">INGRESSO.COM</a></li>
+                    <li><a href="">BATE-PAPO</a></li>
+                    <li><a href="">UOL MEU NEGÓCIO</a></li>
+                    <li><a href="">ESTUDE ONLINE</a></li>
+                    <li><a href="">UOL PLAY</a></li>
+                    <li><a href="">PAGSEGURO</a></li>
+                </ul>
+        
+                <ul class="menu" style="text-align: right;">
+                    <li><a href="">SAC</a></li>
+                    <li><a href=""><i class="fa-regular fa-envelope"></i> EMAIL</a></li>
+                    <li><a href=""><i class="fa-regular fa-user"></i> ENTRE</a></li>
+                    <li>
+                        <button style="background: #fff; padding: 5px; border: 0px; border-radius: 4px;">
+                            ASSINE UOL
+                        </button>
+                    </li>
+                </ul>
+    
+              
+            </div>
+        </div>
+
+        <div class="container">          
+
+            <div class="row">
+                <div id="menuUtil" class="col">
+                    <img width="190" height="68" alt="UOL - Seu universo online" src="https://conteudo.imguol.com.br/c/home/layout/vueland/icons/brand/uol-logo-full.svg?v4" class="icon__image">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col" style="padding: 15px;">
+                            <button style="background-color: red; color:#fff; border: 0px; border-radius: 5px;">
+                                <i class="fa-regular fa-envelope"></i> EMAIL
+                            </button>
+                        </div>
+                        <div class="col">                    
+                            <small>
+                            Ainda não tem um email UOL? Assine
+                            PagBank o banco completo
+                        </small>       
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+            </div>
+          </div>
+    </body>
+</html>

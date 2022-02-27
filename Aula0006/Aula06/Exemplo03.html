@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Exemplo 02</title>
+
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet" />
+
+        <style>
+            img {
+                position: relative;
+                display: inline-block;
+                transform: rotate(-45deg);
+                transform-origin: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>classe COL-??-??</h1>
+        <div class="container" style="background:red">
+            <div class="row" style="background:yellow;">
+              <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">col-2</div>
+              <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">col-4</div>
+              <div class="d-none d-sm-block col-sm-6 col-md-6 col-lg-6">col-6</div>
+            </div>
+            <div class="row" style="background-color: cadetblue;">
+                <div class="d-md-none">hide on screens wider than lg</div>
+                <div class="d-none d-md-block">hide on screens smaller than lg</div>
+            </div>
+        </div>
+
+        <img src="transferir.png" />
+    </body>
+</html>
