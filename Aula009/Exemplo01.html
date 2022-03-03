@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+
+    <style>
+        ul {
+            list-style-type: square;
+        }
+        
+        body {
+            padding-top: 1px;
+            width: 400px;
+            margin: 20px;
+        }
+        
+        .body ul {
+            width: 400px;
+            margin-left: 500px;
+        }
+        
+        button {
+            margin: 5px;
+            padding-top: 5px;
+            border-color: red;
+            border-style: solid;
+            border: 50px;
+        }
+        
+        .body input {
+            border: 50px;
+            border-color: red;
+            border-style: solid;
+        }
+    </style>
+
+    <script>
+        function addProduto() {
+            if ($("#item").val() == "") {
+                alert("Necessário informar o nome do produto");
+            } else {
+                var itemNovo = "<li>" + $("#item").val() + "</li>";
+                $("#lista").append(itemNovo);
+                $("#item").val("");
+            }
+        }
+
+        $(document).ready(function() {
+            $("#adicionar").click(function() {
+                if ($("#item").val() == "") {
+                    alert("Necessário Informar um Produto");
+                } else {
+                    var itemNovo = "<li>" + $("#item").val() + "</li>";
+                    $("#lista").append(itemNovo);
+                    ("#item").val("");
+                }
+            });
+            $("#limpar").click(function() {
+                let l = $("#lista").children();
+
+                for (child of l) {
+                    child.remove();
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div clas="row">
+            <h1>Lista De Compras</h1>
+
+            <div class="col">
+                <form>
+                    <label form="item" class="form-label">Digite o Nome do Porduto</label>
+                    <input type="item" class="form-control" id="item" placeholder="Digite o Produto Que Deseja Comprar">
+
+                    <button type="button" class="btn btn-primary" id="adicionar"> Edicionar</button>
+                    <button type="button" class="btn btn-danger" id="limpar"> Limpar</button>
+
+
+                </form>
+
+                <div class="item">
+                    <h3>Produtos à Comprar</h1>
+                        <ul id="lista">
+
+                        </ul>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
